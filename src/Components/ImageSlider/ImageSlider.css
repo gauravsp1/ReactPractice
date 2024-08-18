@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    border: 1px solid rgb(157, 151, 151);
+    justify-content: center;
+    align-items: center;
+    width:600px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
+    gap: 20px;
+}
+.image-content{
+    width: 500px;
+     height: 500px;
+    object-fit: contain; 
+    transition: opacity 0.35s ease-in-out;
+    position: absolute;
+}
+.left-arrow{
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.right-arrow{
+    width: 20px;
+    height: 20px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+.images-holder{
+    /* overflow:hidden ; */
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
