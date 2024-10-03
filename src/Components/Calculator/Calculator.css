@@ -1,0 +1,40 @@
+.base{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid rgb(156, 153, 153);
+    border-radius: 6px;
+    gap: 10px;
+    width: 25%;
+}
+.result{
+    box-shadow: 1px 1px 5px rgb(146, 142, 142);
+    border-radius: 5px;
+    width: 95%;
+    min-height: 40px;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 10px;
+
+}
+.number-pad{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 5px rgb(146, 142, 142);
+    border-radius: 5px;
+    width: 95%;
+    padding:10px;
+    gap: 20px;
+}
+.items{
+    border: 1px solid rgb(156, 153, 153);
+    border-radius: 6px;
+    padding: 15px 20px;
+}

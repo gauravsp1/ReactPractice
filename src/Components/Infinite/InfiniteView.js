@@ -37,7 +37,7 @@ function InfiniteView() {
           ))
         ) : (
           <p>No memes available</p>
-        )}{" "}
+        )}
         {loading && <Shimmer />}
       </div>
     </div>

@@ -1,5 +1,22 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
+// POST
+// const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+//   body: JSON.stringify(newPost),
+// });
+
+// fetch(url, {
+//   method: 'POST' || 'PUT' || 'DELETE',  // Specify the method
+//   headers: {
+//     'Content-Type': 'application/json',  // Headers for JSON data
+//   },
+//   body: JSON.stringify(data),  // Body with the data (for POST/PUT)
+// })
+
 export const fetchUsers = createAsyncThunk("users/fetchUsers", async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   return response.json();
