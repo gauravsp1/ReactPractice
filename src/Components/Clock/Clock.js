@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 
 function Clock() {
   const [displayDate, setDisplayDate] = useState();
+  const [value, setValue] = useState(50);
+
+  const handleChange = (event) => {
+    setValue(event.target.value); // Update state with the new value
+  };
+
   console.log("displayDate", displayDate);
   const [start, setStart] = useState(false);
   const newDate = () => {
@@ -30,8 +36,17 @@ function Clock() {
           {start ? "Pause" : "Start"}
         </div>
       </div>
-
       <div className="content"> {displayDate}</div>
+      <input
+        type="range"
+        id="slider"
+        min="0"
+        max="100"
+        value={value}
+        step="10"
+        onChange={handleChange} // Update value as the user slides
+      />{" "}
+      <span>{value}</span>
     </div>
   );
 }

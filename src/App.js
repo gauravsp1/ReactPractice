@@ -12,6 +12,7 @@ import Clock from "./Components/Clock/Clock";
 import StarRating from "./Components/StarRating/StarRating";
 import NotFound from "./Components/NotFound";
 import Calculator from "./Components/Calculator/Calculator";
+import FileStructure from "./Components/FileStructure/FileStructure";
 
 function App() {
   const [selectedRoute, setSelectedRoute] = useState("Infinite Scroll");
@@ -57,6 +58,10 @@ function App() {
       title: "Calculator",
       path: "/calculator",
     },
+    {
+      title: "File Structure",
+      path: "/file-structure",
+    },
   ];
   return (
     <div className="App">
@@ -89,6 +94,7 @@ function App() {
         <Route path="/clock" element={<Clock />} exact />
         <Route path="/star" element={<StarRating />} exact />
         <Route path="/calculator" element={<Calculator />} exact />
+        <Route path="/file-structure" element={<FileStructure />} exact />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

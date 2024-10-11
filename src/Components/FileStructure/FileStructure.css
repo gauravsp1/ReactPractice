@@ -1,0 +1,23 @@
+
+.nested-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-left: 1px solid black;
+}
+.item-title{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 4px 10px;
+    display: flex;
+   width: 300px;
+   justify-content: space-between;
+   background-color: antiquewhite;
+}
+
+.item-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    gap: 10px;
+}

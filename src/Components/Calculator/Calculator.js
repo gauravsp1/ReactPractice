@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Calculator.css";
 
 function Calculator() {
@@ -22,8 +22,6 @@ function Calculator() {
     "showResult",
     "clear",
   ];
-  console.log("display", display);
-  console.log("result", eval(result));
 
   const handleClick = (inputValue) => {
     if (inputValue === "clear") {
@@ -38,6 +36,12 @@ function Calculator() {
       });
     }
   };
+  useEffect(() => {
+    console.log("Here");
+    return () => {
+      console.log("In return");
+    };
+  }, []);
   return (
     <div className="base">
       <div className="container">
