@@ -19,3 +19,6 @@
   color: rgb(216, 143, 143);
   text-decoration: underline;
 }
+*{
+  box-sizing: border-box;
+}

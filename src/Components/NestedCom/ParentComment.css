@@ -1,0 +1,15 @@
+.comment-base{
+    display: flex;
+    position: relative;
+    width: 350px;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.replies-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    gap: 20px;
+}

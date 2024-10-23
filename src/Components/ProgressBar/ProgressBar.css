@@ -1,0 +1,47 @@
+.bar-container{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 400px;
+    height: 20px;
+    background-color: rgb(231, 209, 168);
+
+}
+.bar{
+background-color: rgb(228, 176, 78);
+border-radius: 20px 0 0 20px;
+}
+.bar-text{
+    position: absolute;
+    left: 50%;
+}
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 350px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid black;
+}
+.box{
+    display: flex;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.modal{
+    position: absolute;
+    border: 1px solid black;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+}

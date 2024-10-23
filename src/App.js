@@ -13,6 +13,9 @@ import StarRating from "./Components/StarRating/StarRating";
 import NotFound from "./Components/NotFound";
 import Calculator from "./Components/Calculator/Calculator";
 import FileStructure from "./Components/FileStructure/FileStructure";
+import ProgressBar from "./Components/ProgressBar/ProgressBar";
+import AutoSuggestion from "./Components/AutoSuggestion/AutoSuggestion";
+import ParentComment from "./Components/NestedCom/ParentComment";
 
 function App() {
   const [selectedRoute, setSelectedRoute] = useState("Infinite Scroll");
@@ -35,6 +38,10 @@ function App() {
       path: "/nested-comments",
     },
     {
+      title: "Nested Comments advance",
+      path: "/nested-comments2",
+    },
+    {
       title: "Image Slider",
       path: "/image-slider",
     },
@@ -51,12 +58,20 @@ function App() {
       path: "/clock",
     },
     {
+      title: "Auto Suggestion",
+      path: "/auto-suggestion",
+    },
+    {
       title: "Star Rating",
       path: "/star",
     },
     {
       title: "Calculator",
       path: "/calculator",
+    },
+    {
+      title: "Random",
+      path: "/random",
     },
     {
       title: "File Structure",
@@ -88,13 +103,16 @@ function App() {
         <Route path="/" element={<InfiniteView />} exact />
         <Route path="/accordian" element={<Accordian />} exact />
         <Route path="/nested-comments" element={<NestedComment />} exact />
+        <Route path="/nested-comments2" element={<ParentComment />} exact />
         <Route path="/image-slider" element={<ImageSlider />} exact />
         <Route path="/counter" element={<CountDown />} exact />
         <Route path="/stopwatch" element={<StopWatch />} exact />
         <Route path="/clock" element={<Clock />} exact />
+        <Route path="/auto-suggestion" element={<AutoSuggestion />} exact />
         <Route path="/star" element={<StarRating />} exact />
         <Route path="/calculator" element={<Calculator />} exact />
         <Route path="/file-structure" element={<FileStructure />} exact />
+        <Route path="/random" element={<ProgressBar />} exact />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
